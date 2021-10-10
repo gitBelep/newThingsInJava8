@@ -28,7 +28,7 @@ public class OwnTest {
     }
 
     @Test   //for modifiable Object
-    public void testOwnNamePartCounterWithReduce(){
+    public void testOwnNamePartCounterWithCollect(){
         ModifiableNamePartCounter result = employees.stream()
         .collect(ModifiableNamePartCounter::new,
                 (npc, e) -> npc.add(e),
